@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: java_auth_service
+
+  datasource:
+    url: "jdbc:mysql://localhost:3306/testing_java_auth"
+    username: "root"
+    password: "my-password"
+    driver-class-name: com.mysql.cj.jdbc.Driver # Corrected driver class name
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect # For Hibernate 5+ or org.hibernate.dialect.MySQL8Dialect for MySQL 8+
